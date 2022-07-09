@@ -40,3 +40,16 @@
 2022-07-09 14:05:50.253  INFO 10276 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2022-07-09 14:05:50.254  INFO 10276 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2022-07-09 14:05:50.258  INFO 10276 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-07-09 14:16:55.692  INFO 4796 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication on mao with PID 4796 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\classes started by mao in H:\程序\大三暑假\spring_cloud_demo)
+2022-07-09 14:16:55.695 DEBUG 4796 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 14:16:55.695  INFO 4796 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 14:16:56.381  INFO 4796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-09 14:16:56.393  INFO 4796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 14:16:56.395  INFO 4796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 14:16:56.456  INFO 4796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 14:16:56.456  INFO 4796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 716 ms
+2022-07-09 14:16:56.542  INFO 4796 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 14:16:56.641  INFO 4796 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-09 14:16:56.764  INFO 4796 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:16:56.935  INFO 4796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-09 14:16:56.945  INFO 4796 --- [main] m.order_service.OrderServiceApplication  : Started OrderServiceApplication in 1.529 seconds (JVM running for 2.007)

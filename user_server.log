@@ -43,3 +43,16 @@
 2022-07-09 14:05:50.300  INFO 2700 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2022-07-09 14:05:50.300  INFO 2700 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2022-07-09 14:05:50.304  INFO 2700 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-07-09 14:16:06.113  INFO 2280 --- [main] mao.user_service.UserServiceApplication  : Starting UserServiceApplication on mao with PID 2280 (H:\程序\大三暑假\spring_cloud_demo\user_service\target\classes started by mao in H:\程序\大三暑假\spring_cloud_demo)
+2022-07-09 14:16:06.115 DEBUG 2280 --- [main] mao.user_service.UserServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 14:16:06.116  INFO 2280 --- [main] mao.user_service.UserServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 14:16:06.825  INFO 2280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-07-09 14:16:06.835  INFO 2280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 14:16:06.835  INFO 2280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 14:16:06.899  INFO 2280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 14:16:06.899  INFO 2280 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 741 ms
+2022-07-09 14:16:06.986  INFO 2280 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 14:16:07.083  INFO 2280 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-09 14:16:07.207  INFO 2280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:16:07.380  INFO 2280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-07-09 14:16:07.389  INFO 2280 --- [main] mao.user_service.UserServiceApplication  : Started UserServiceApplication in 1.554 seconds (JVM running for 2.034)
