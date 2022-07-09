@@ -1,0 +1,20 @@
+2022-07-09 13:35:43.960  INFO 14736 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication on mao with PID 14736 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\classes started by mao in H:\程序\大三暑假\spring_cloud_demo)
+2022-07-09 13:35:43.962 DEBUG 14736 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 13:35:43.963  INFO 14736 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 13:35:44.397  WARN 14736 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[mao.order_service]' package. Please check your configuration.
+2022-07-09 13:35:44.664  INFO 14736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-09 13:35:44.671  INFO 14736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 13:35:44.671  INFO 14736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 13:35:44.733  INFO 14736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 13:35:44.733  INFO 14736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
+2022-07-09 13:35:44.853  INFO 14736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 13:35:44.934  INFO 14736 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 13:35:45.027  INFO 14736 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-09 13:35:45.170  INFO 14736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-09 13:35:45.179  INFO 14736 --- [main] m.order_service.OrderServiceApplication  : Started OrderServiceApplication in 1.495 seconds (JVM running for 1.947)
+2022-07-09 13:37:42.066  INFO 14736 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-09 13:37:42.066  INFO 14736 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-09 13:37:42.070  INFO 14736 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-09 14:00:49.964  INFO 14736 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-07-09 14:00:49.965  INFO 14736 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-07-09 14:00:49.965  INFO 14736 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

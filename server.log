@@ -1,0 +1,311 @@
+2022-07-09 13:18:13.583  INFO 1376 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication on mao with PID 1376 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\classes started by mao in H:\程序\大三暑假\spring_cloud_demo)
+2022-07-09 13:18:13.585 DEBUG 1376 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 13:18:13.586  INFO 1376 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 13:18:14.106  WARN 1376 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[mao.order_service]' package. Please check your configuration.
+2022-07-09 13:18:14.364  INFO 1376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-09 13:18:14.376  INFO 1376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 13:18:14.376  INFO 1376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 13:18:14.439  INFO 1376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 13:18:14.439  INFO 1376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 798 ms
+2022-07-09 13:18:14.558  INFO 1376 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 13:18:14.647  INFO 1376 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 13:18:14.734 ERROR 1376 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} init error
+
+java.sql.SQLException: ${jdbc.driver}
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:683) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1222) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:891) ~[druid-1.2.8.jar:1.2.8]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1925) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1867) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at mao.order_service.OrderServiceApplication.main(OrderServiceApplication.java:12) ~[classes/:na]
+Caused by: java.lang.ClassNotFoundException: ${jdbc.driver}
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:375) ~[na:na]
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:681) ~[druid-1.2.8.jar:1.2.8]
+	... 26 common frames omitted
+
+2022-07-09 13:18:14.736  WARN 1376 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLException: ${jdbc.driver}
+2022-07-09 13:18:14.736  INFO 1376 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-09 13:18:14.738  INFO 1376 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-09 13:18:14.752  INFO 1376 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-09 13:18:14.758 ERROR 1376 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLException: ${jdbc.driver}
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at mao.order_service.OrderServiceApplication.main(OrderServiceApplication.java:12) ~[classes/:na]
+Caused by: java.sql.SQLException: ${jdbc.driver}
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:683) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1222) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:891) ~[druid-1.2.8.jar:1.2.8]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1925) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1867) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ${jdbc.driver}
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:375) ~[na:na]
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:681) ~[druid-1.2.8.jar:1.2.8]
+	... 26 common frames omitted
+
+2022-07-09 13:24:30.839  INFO 17628 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication on mao with PID 17628 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\classes started by mao in H:\程序\大三暑假\spring_cloud_demo)
+2022-07-09 13:24:30.841 DEBUG 17628 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 13:24:30.842  INFO 17628 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 13:24:31.284  WARN 17628 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[mao.order_service]' package. Please check your configuration.
+2022-07-09 13:24:31.542  INFO 17628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-09 13:24:31.549  INFO 17628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 13:24:31.549  INFO 17628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 13:24:31.613  INFO 17628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 13:24:31.614  INFO 17628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2022-07-09 13:24:31.736  INFO 17628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 13:24:31.821  INFO 17628 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 13:24:31.899 ERROR 17628 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} init error
+
+java.sql.SQLException: ${jdbc.driver}
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:683) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1222) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:891) ~[druid-1.2.8.jar:1.2.8]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1925) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1867) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at mao.order_service.OrderServiceApplication.main(OrderServiceApplication.java:12) ~[classes/:na]
+Caused by: java.lang.ClassNotFoundException: ${jdbc.driver}
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:375) ~[na:na]
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:681) ~[druid-1.2.8.jar:1.2.8]
+	... 26 common frames omitted
+
+2022-07-09 13:24:31.900  WARN 17628 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLException: ${jdbc.driver}
+2022-07-09 13:24:31.901  INFO 17628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-09 13:24:31.903  INFO 17628 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-09 13:24:31.916  INFO 17628 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-09 13:24:31.922 ERROR 17628 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLException: ${jdbc.driver}
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at mao.order_service.OrderServiceApplication.main(OrderServiceApplication.java:12) ~[classes/:na]
+Caused by: java.sql.SQLException: ${jdbc.driver}
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:683) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1222) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:891) ~[druid-1.2.8.jar:1.2.8]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1925) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1867) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ${jdbc.driver}
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:375) ~[na:na]
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:681) ~[druid-1.2.8.jar:1.2.8]
+	... 26 common frames omitted
+
+2022-07-09 13:27:51.480  INFO 12384 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication on mao with PID 12384 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\classes started by mao in H:\程序\大三暑假\spring_cloud_demo)
+2022-07-09 13:27:51.482 DEBUG 12384 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 13:27:51.483  INFO 12384 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 13:27:51.963  WARN 12384 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[mao.order_service]' package. Please check your configuration.
+2022-07-09 13:27:52.240  INFO 12384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-09 13:27:52.257  INFO 12384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 13:27:52.258  INFO 12384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 13:27:52.328  INFO 12384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 13:27:52.329  INFO 12384 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 805 ms
+2022-07-09 13:27:52.461  INFO 12384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 13:27:52.554  INFO 12384 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 13:27:52.640 ERROR 12384 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} init error
+
+java.sql.SQLException: ${jdbc.driver}
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:683) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1222) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:891) ~[druid-1.2.8.jar:1.2.8]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1925) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1867) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at mao.order_service.OrderServiceApplication.main(OrderServiceApplication.java:12) ~[classes/:na]
+Caused by: java.lang.ClassNotFoundException: ${jdbc.driver}
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:375) ~[na:na]
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:681) ~[druid-1.2.8.jar:1.2.8]
+	... 26 common frames omitted
+
+2022-07-09 13:27:52.641  WARN 12384 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLException: ${jdbc.driver}
+2022-07-09 13:27:52.642  INFO 12384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-09 13:27:52.644  INFO 12384 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-09 13:27:52.657  INFO 12384 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-09 13:27:52.662 ERROR 12384 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLException: ${jdbc.driver}
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+	at mao.order_service.OrderServiceApplication.main(OrderServiceApplication.java:12) ~[classes/:na]
+Caused by: java.sql.SQLException: ${jdbc.driver}
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:683) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1222) ~[druid-1.2.8.jar:1.2.8]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:891) ~[druid-1.2.8.jar:1.2.8]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1925) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1867) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ${jdbc.driver}
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:375) ~[na:na]
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:681) ~[druid-1.2.8.jar:1.2.8]
+	... 26 common frames omitted
+
+2022-07-09 13:33:44.297  INFO 8072 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication on mao with PID 8072 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\classes started by mao in H:\程序\大三暑假\spring_cloud_demo)
+2022-07-09 13:33:44.299 DEBUG 8072 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 13:33:44.300  INFO 8072 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 13:33:44.728  WARN 8072 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[mao.order_service]' package. Please check your configuration.
+2022-07-09 13:33:44.981  INFO 8072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-09 13:33:44.988  INFO 8072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 13:33:44.988  INFO 8072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 13:33:45.049  INFO 8072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 13:33:45.050  INFO 8072 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 711 ms
+2022-07-09 13:33:45.168  INFO 8072 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 13:33:45.253  INFO 8072 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 13:33:45.348  INFO 8072 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-09 13:33:45.503  INFO 8072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-09 13:33:45.512  INFO 8072 --- [main] m.order_service.OrderServiceApplication  : Started OrderServiceApplication in 1.485 seconds (JVM running for 1.927)
+2022-07-09 13:34:01.146  INFO 8072 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-07-09 13:34:01.147  INFO 8072 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-07-09 13:34:01.148  INFO 8072 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
