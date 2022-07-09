@@ -1,0 +1,39 @@
+2022-07-09 14:57:53.839  INFO 12212 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication v0.0.1 on mao with PID 12212 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\order_service-0.0.1.jar started by mao in H:\程序\大三暑假\spring_cloud_demo\order_service\target)
+2022-07-09 14:57:53.844 DEBUG 12212 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 14:57:53.845  INFO 12212 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 14:57:55.258  INFO 12212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-09 14:57:55.270  INFO 12212 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 14:57:55.271  INFO 12212 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 14:57:55.338  INFO 12212 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 14:57:55.339  INFO 12212 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1431 ms
+2022-07-09 14:57:55.507  INFO 12212 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 14:57:55.699  INFO 12212 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-09 14:57:55.955  INFO 12212 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:57:56.234  INFO 12212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-09 14:57:56.248  INFO 12212 --- [main] m.order_service.OrderServiceApplication  : Started OrderServiceApplication in 3.051 seconds (JVM running for 3.515)
+2022-07-09 14:58:03.498  INFO 7532 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication v0.0.1 on mao with PID 7532 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\order_service-0.0.1.jar started by mao in H:\程序\大三暑假\spring_cloud_demo\order_service\target)
+2022-07-09 14:58:03.503 DEBUG 7532 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 14:58:03.504  INFO 7532 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 14:58:04.858  INFO 7532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-09 14:58:04.870  INFO 7532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 14:58:04.870  INFO 7532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 14:58:04.937  INFO 7532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 14:58:04.938  INFO 7532 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1375 ms
+2022-07-09 14:58:05.102  INFO 7532 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 14:58:05.293  INFO 7532 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-09 14:58:05.542  INFO 7532 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:58:05.856  INFO 7532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-09 14:58:05.870  INFO 7532 --- [main] m.order_service.OrderServiceApplication  : Started OrderServiceApplication in 3.003 seconds (JVM running for 3.466)
+2022-07-09 14:58:10.414  INFO 17924 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication v0.0.1 on mao with PID 17924 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\order_service-0.0.1.jar started by mao in H:\程序\大三暑假\spring_cloud_demo\order_service\target)
+2022-07-09 14:58:10.418 DEBUG 17924 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 14:58:10.419  INFO 17924 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 14:58:11.753  INFO 17924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-09 14:58:11.765  INFO 17924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 14:58:11.765  INFO 17924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 14:58:11.852  INFO 17924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 14:58:11.853  INFO 17924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1367 ms
+2022-07-09 14:58:12.023  INFO 17924 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 14:58:12.215  INFO 17924 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-09 14:58:12.439  INFO 17924 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:58:12.734  INFO 17924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-09 14:58:12.746  INFO 17924 --- [main] m.order_service.OrderServiceApplication  : Started OrderServiceApplication in 2.943 seconds (JVM running for 3.413)
