@@ -7,7 +7,7 @@
         <groupId>mao</groupId>
         <artifactId>spring_cloud_demo</artifactId>
         <version>0.0.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>order_service</artifactId>
