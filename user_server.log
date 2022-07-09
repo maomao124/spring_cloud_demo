@@ -15,3 +15,31 @@
 2022-07-09 14:00:49.997  INFO 17580 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2022-07-09 14:00:49.998  INFO 17580 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
 2022-07-09 14:00:49.999  INFO 17580 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:03:33.791  INFO 2700 --- [main] mao.user_service.UserServiceApplication  : Starting UserServiceApplication on mao with PID 2700 (H:\程序\大三暑假\spring_cloud_demo\user_service\target\classes started by mao in H:\程序\大三暑假\spring_cloud_demo)
+2022-07-09 14:03:33.793 DEBUG 2700 --- [main] mao.user_service.UserServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 14:03:33.794  INFO 2700 --- [main] mao.user_service.UserServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 14:03:34.525  INFO 2700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-07-09 14:03:34.532  INFO 2700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 14:03:34.532  INFO 2700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 14:03:34.596  INFO 2700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 14:03:34.597  INFO 2700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 764 ms
+2022-07-09 14:03:34.691  INFO 2700 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 14:03:34.792  INFO 2700 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-09 14:03:34.915  INFO 2700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:03:35.090  INFO 2700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-07-09 14:03:35.099  INFO 2700 --- [main] mao.user_service.UserServiceApplication  : Started UserServiceApplication in 1.601 seconds (JVM running for 2.049)
+2022-07-09 14:03:57.154  INFO 2700 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-09 14:03:57.154  INFO 2700 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-09 14:03:57.159  INFO 2700 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-09 14:04:04.691 DEBUG 2700 --- [http-nio-8082-exec-3] m.u.mapper.UserMapper.findById           : ==>  Preparing: select * from tb_user where id = ?
+2022-07-09 14:04:04.708 DEBUG 2700 --- [http-nio-8082-exec-3] m.u.mapper.UserMapper.findById           : ==> Parameters: 1(Long)
+2022-07-09 14:04:04.726 DEBUG 2700 --- [http-nio-8082-exec-3] m.u.mapper.UserMapper.findById           : <==      Total: 1
+2022-07-09 14:04:22.848 DEBUG 2700 --- [http-nio-8082-exec-4] m.u.mapper.UserMapper.findById           : ==>  Preparing: select * from tb_user where id = ?
+2022-07-09 14:04:22.849 DEBUG 2700 --- [http-nio-8082-exec-4] m.u.mapper.UserMapper.findById           : ==> Parameters: 1(Long)
+2022-07-09 14:04:22.851 DEBUG 2700 --- [http-nio-8082-exec-4] m.u.mapper.UserMapper.findById           : <==      Total: 1
+2022-07-09 14:04:23.015 DEBUG 2700 --- [http-nio-8082-exec-5] m.u.mapper.UserMapper.findById           : ==>  Preparing: select * from tb_user where id = ?
+2022-07-09 14:04:23.015 DEBUG 2700 --- [http-nio-8082-exec-5] m.u.mapper.UserMapper.findById           : ==> Parameters: 1(Long)
+2022-07-09 14:04:23.016 DEBUG 2700 --- [http-nio-8082-exec-5] m.u.mapper.UserMapper.findById           : <==      Total: 1
+2022-07-09 14:05:50.300  INFO 2700 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:05:50.300  INFO 2700 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-07-09 14:05:50.304  INFO 2700 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

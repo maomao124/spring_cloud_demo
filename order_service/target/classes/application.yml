@@ -1,3 +1,4 @@
+# order 业务 配置文件
 
 spring:
 
@@ -40,3 +41,7 @@ server:
   port: 8081
 
 
+mybatis:
+  type-aliases-package: mao.order_service
+  configuration:
+    map-underscore-to-camel-case: true

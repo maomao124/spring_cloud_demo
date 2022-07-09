@@ -18,3 +18,25 @@
 2022-07-09 14:00:49.964  INFO 14736 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2022-07-09 14:00:49.965  INFO 14736 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
 2022-07-09 14:00:49.965  INFO 14736 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:04:42.344  INFO 10276 --- [main] m.order_service.OrderServiceApplication  : Starting OrderServiceApplication on mao with PID 10276 (H:\程序\大三暑假\spring_cloud_demo\order_service\target\classes started by mao in H:\程序\大三暑假\spring_cloud_demo)
+2022-07-09 14:04:42.347 DEBUG 10276 --- [main] m.order_service.OrderServiceApplication  : Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+2022-07-09 14:04:42.347  INFO 10276 --- [main] m.order_service.OrderServiceApplication  : No active profile set, falling back to default profiles: default
+2022-07-09 14:04:43.060  INFO 10276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-09 14:04:43.069  INFO 10276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 14:04:43.070  INFO 10276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-07-09 14:04:43.134  INFO 10276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 14:04:43.134  INFO 10276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 748 ms
+2022-07-09 14:04:43.226  INFO 10276 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-07-09 14:04:43.322  INFO 10276 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-09 14:04:43.449  INFO 10276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:04:43.618  INFO 10276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-09 14:04:43.627  INFO 10276 --- [main] m.order_service.OrderServiceApplication  : Started OrderServiceApplication in 1.561 seconds (JVM running for 2.048)
+2022-07-09 14:04:46.152  INFO 10276 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-09 14:04:46.152  INFO 10276 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-09 14:04:46.158  INFO 10276 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-09 14:04:55.945 DEBUG 10276 --- [http-nio-8081-exec-2] m.o.mapper.OrderMapper.findById          : ==>  Preparing: select * from tb_order where id = ?
+2022-07-09 14:04:55.966 DEBUG 10276 --- [http-nio-8081-exec-2] m.o.mapper.OrderMapper.findById          : ==> Parameters: 101(Long)
+2022-07-09 14:04:55.986 DEBUG 10276 --- [http-nio-8081-exec-2] m.o.mapper.OrderMapper.findById          : <==      Total: 1
+2022-07-09 14:05:50.253  INFO 10276 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-09 14:05:50.254  INFO 10276 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-07-09 14:05:50.258  INFO 10276 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

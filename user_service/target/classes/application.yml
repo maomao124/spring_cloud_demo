@@ -1,3 +1,5 @@
+# user 业务 配置文件
+
 
 spring:
 
@@ -7,7 +9,7 @@ spring:
 
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/cloud_order
+      url: jdbc:mysql://localhost:3306/cloud_user
       username: root
       password: 20010713
 
@@ -40,3 +42,7 @@ server:
   port: 8082
 
 
+mybatis:
+  type-aliases-package: mao.user_service
+  configuration:
+    map-underscore-to-camel-case: true
